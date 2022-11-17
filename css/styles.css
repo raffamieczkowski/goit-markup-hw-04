@@ -169,7 +169,7 @@ img {
 .services-gallery {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
+  justify-content: space-between;
 }
 
 .service-gallery-item {
@@ -178,7 +178,7 @@ img {
 
 .services-gallery-picture {
   background: #ffffff;
-  margin: 0 30px 0 0;
+  margin: 0;
 }
 
 .hero {
@@ -597,15 +597,55 @@ img {
   border: 1px solid #2196f3;
   fill:#2196f3;
 }
-
+.join-to {
+    display: flex;
+    padding-top: 60px;
+  }
+.social-link-join{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-decoration: none;
+    fill: #ffffff;
+  }
+  
+  .social-link-join:hover {
+    background-color: #2196f3;
+    fill: #FFFFFF;
+  }
+  /* .join-to{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  } */
 .join-to-to{
 font-family: Roboto;
 font-size: 14px;
 font-weight: 700;
 line-height: 16px;
 letter-spacing: 0.03em;
+/* text-justify: center; */
 color:#FFFFFF;
+/* text-align: center; */
 margin-bottom: 20px;
+  }
+
+  .container-join-to{
+margin: 0 auto;
+width: 100%;
+max-width: 1200px;
+padding: 0 15px;
+display: flex;
+padding-top: 60px;
+}
+  
+  .footer-join-to{
+    background-color: var(--background-grey);
+    height: 252px;
   }
 
 .kontakt {
@@ -659,6 +699,27 @@ margin-bottom: 20px;
     margin-top: 0px;
     margin-bottom: 20px;
   }
+  .social-links-joinus {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+  }
+  .social-links-joinus-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--social-grey);
+  }
+  .social-links-footer {
+    background: rgba(255, 255, 255, 0.1);
+    fill: var(--main-white);
+  }
+
   .footer-logo-joinus{
     padding-bottom: 20px;
   }
@@ -694,18 +755,29 @@ margin-bottom: 20px;
   margin-top: 0px;
   margin-bottom: 20px;
 }
-
+.social-links-join {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+.social-links-join-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--social-grey);
+}
+.social-links-join-footer {
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--main-white);
+}
 .stopa {
   background-color: #2f303a;
 }
-
-.jointous{
-  display: flex;
-  flex-direction: row;
-  gap: 70px;
-  justify-content: flex-start;
-}
-
 .logo-stopka {
   display: flex;
   flex-direction: column;
@@ -716,7 +788,6 @@ margin-bottom: 20px;
 .webstudio-footer {
   display: flex;
   margin-top: 60px;
-  margin-right: 70px;
 }
 .logo-dol {
   display: flex;
@@ -745,14 +816,14 @@ margin-bottom: 20px;
   margin-top: 20px;
   margin-bottom: 60px;
 }
-.footer-staff {
+.Footer-staff {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  margin-right: 70px;
+  margin: 0;
   padding: 0;
 }
-.footer-staff li {
+.Footer-staff li {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -762,15 +833,15 @@ margin-bottom: 20px;
   list-style-type: none;
 }
 
-.footer-staff li:nth-child(2) {
+.Footer-staff li:nth-child(2) {
   margin-top: 9px;
 }
 
-.footer-staff li:nth-child(3) {
+.Footer-staff li:nth-child(3) {
   margin-top: 9px;
 }
 
-.footer-staff li:nth-child(2) a {
+.Footer-staff li:nth-child(2) a {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -780,7 +851,7 @@ margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-staff li:nth-child(3) a {
+.Footer-staff li:nth-child(3) a {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -788,24 +859,4 @@ margin-bottom: 20px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-}
-.social-link-join {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  text-decoration: none;
-  fill: #ffffff;
-  background-color:rgba(255, 255, 255, 0.1);
-  
-}
-.social-link-join:hover {
-  background-color: #2196f3;
-  fill: #FFFFFF;
-}
-.footer-staff-join{
-  display:flex;
-  list-style-type: none;
 }
